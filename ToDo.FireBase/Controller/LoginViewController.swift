@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var warnLabel: UILabel!
     
@@ -36,7 +37,7 @@ class LoginViewController: UIViewController {
             (userInfo[UIResponder.keyboardFrameEndUserInfoKey]
             as! NSValue).cgRectValue
         
-        (self.view as! UIScrollView).contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height + kbFrameSize.height)
+        self.scrollView.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height + kbFrameSize.height)
         
     }
     
