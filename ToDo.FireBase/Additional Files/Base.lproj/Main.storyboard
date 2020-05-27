@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0CX-wu-bsb">
-                                        <rect key="frame" x="91" y="209.5" width="233.5" height="399.5"/>
+                                        <rect key="frame" x="90.5" y="209.5" width="233.5" height="399.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kwb-7D-Q86">
                                                 <rect key="frame" x="0.0" y="0.0" width="233.5" height="104.5"/>
@@ -114,7 +114,7 @@
                             <constraint firstItem="RhX-Ja-hog" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ut-KM-i6T"/>
                             <constraint firstItem="RhX-Ja-hog" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Luh-vL-F84"/>
                             <constraint firstItem="RhX-Ja-hog" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="WQu-Vz-ce5"/>
-                            <constraint firstItem="RhX-Ja-hog" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="1" id="eoR-Sd-D12"/>
+                            <constraint firstItem="RhX-Ja-hog" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="eoR-Sd-D12"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

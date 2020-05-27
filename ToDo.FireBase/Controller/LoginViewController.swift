@@ -39,9 +39,13 @@ class LoginViewController: UIViewController {
         
         self.scrollView.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height + kbFrameSize.height)
         
+        self.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: kbFrameSize.height, right: 0)
+        
     }
     
     @objc func kbDidHide(){
+        
+        self.scrollView.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)
         
     }
 
