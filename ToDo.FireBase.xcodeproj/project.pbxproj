@@ -16,6 +16,8 @@
 		A04C1C2D247C2EA200FE8003 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1C2C247C2EA200FE8003 /* TasksViewController.swift */; };
 		A04C1C31247C302800FE8003 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C1C30247C302800FE8003 /* LoginViewController.swift */; };
 		A04C1C33247E40CD00FE8003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A04C1C32247E40CD00FE8003 /* GoogleService-Info.plist */; };
+		A0EDE218247F7A9A00D3FCC9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EDE217247F7A9A00D3FCC9 /* Task.swift */; };
+		A0EDE21A247F7AA400D3FCC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EDE219247F7AA400D3FCC9 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +29,12 @@
 		A04C1C1F247C1DDD00FE8003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A04C1C21247C1DE100FE8003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04C1C24247C1DE100FE8003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A04C1C26247C1DE100FE8003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04C1C26247C1DE100FE8003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ToDo.FireBase/Additional Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		A04C1C2C247C2EA200FE8003 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		A04C1C30247C302800FE8003 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A04C1C32247E40CD00FE8003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0EDE217247F7A9A00D3FCC9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A0EDE219247F7AA400D3FCC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C28B2F0FF7CEC0F8FF60CFAA /* Pods_ToDo_FireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_FireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,9 +79,10 @@
 		A04C1C17247C1DDD00FE8003 /* ToDo.FireBase */ = {
 			isa = PBXGroup;
 			children = (
+				A0EDE21B247F7AAA00D3FCC9 /* Model */,
 				A04C1C2F247C2F2300FE8003 /* Controller */,
+				A0EDE21C247F7AD100D3FCC9 /* View */,
 				A04C1C2E247C2EF800FE8003 /* Additional Files */,
-				A04C1C26247C1DE100FE8003 /* Info.plist */,
 			);
 			path = ToDo.FireBase;
 			sourceTree = "<group>";
@@ -85,9 +90,9 @@
 		A04C1C2E247C2EF800FE8003 /* Additional Files */ = {
 			isa = PBXGroup;
 			children = (
+				A04C1C26247C1DE100FE8003 /* Info.plist */,
 				A04C1C18247C1DDD00FE8003 /* AppDelegate.swift */,
 				A04C1C1A247C1DDD00FE8003 /* SceneDelegate.swift */,
-				A04C1C1E247C1DDD00FE8003 /* Main.storyboard */,
 				A04C1C21247C1DE100FE8003 /* Assets.xcassets */,
 				A04C1C23247C1DE100FE8003 /* LaunchScreen.storyboard */,
 				A04C1C32247E40CD00FE8003 /* GoogleService-Info.plist */,
@@ -102,6 +107,23 @@
 				A04C1C30247C302800FE8003 /* LoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0EDE21B247F7AAA00D3FCC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0EDE217247F7A9A00D3FCC9 /* Task.swift */,
+				A0EDE219247F7AA400D3FCC9 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0EDE21C247F7AD100D3FCC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A04C1C1E247C1DDD00FE8003 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F09419159FC7E1E8538FC717 /* Pods */ = {
@@ -231,6 +253,8 @@
 			files = (
 				A04C1C31247C302800FE8003 /* LoginViewController.swift in Sources */,
 				A04C1C2D247C2EA200FE8003 /* TasksViewController.swift in Sources */,
+				A0EDE21A247F7AA400D3FCC9 /* User.swift in Sources */,
+				A0EDE218247F7A9A00D3FCC9 /* Task.swift in Sources */,
 				A04C1C19247C1DDD00FE8003 /* AppDelegate.swift in Sources */,
 				A04C1C1B247C1DDD00FE8003 /* SceneDelegate.swift in Sources */,
 			);
@@ -379,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SFU59SCCX;
-				INFOPLIST_FILE = ToDo.FireBase/Info.plist;
+				INFOPLIST_FILE = "ToDo.FireBase/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SFU59SCCX;
-				INFOPLIST_FILE = ToDo.FireBase/Info.plist;
+				INFOPLIST_FILE = "ToDo.FireBase/Additional Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
